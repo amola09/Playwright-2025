@@ -16,23 +16,24 @@ const {test,expect} = require('@playwright/test')
 
 // page.getByTestId() to locate an element based on its data-testid attribute.
 
-test('TC05- Verify BuiltInLocators in playwright:',async function({page}) {
-    
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+    test('TC05- Verify BuiltInLocators in playwright:',async function({page}) {
+        
+        await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-    await page.getByPlaceholder('Username').fill('Admin')
-    await page.getByPlaceholder('Password').fill('admin123')
+        await page.getByPlaceholder('Username').fill('Admin')
+        await page.getByPlaceholder('Password').fill('admin123')
 
-    await page.getByRole('button', {type : "submit"} ).click()
+        await page.getByRole('button', {type : "submit"} ).click()
+        
 
-    await expect(page.getByTitle('Help')).toBeVisible()
+        await expect(page.getByTitle('Help')).toBeVisible()
 
-    await expect(page.getByText('Quick Launch')).toBeVisible()
+        await expect(page.getByText('Quick Launch')).toBeVisible()
+        await page.waitForTimeout(3000)
+        
 
-    await page.waitForTimeout(3000)
-
-})
-test("verify built in locators in playwright get by title",async({page})=>{
+    })
+test("Verify built in locators in playwright get by title",async({page})=>{
     await page.goto('https://playwright.dev/')
     await page.getByTitle('Switch between dark and light mode (currently dark mode)').click()
 
@@ -40,7 +41,7 @@ test("verify built in locators in playwright get by title",async({page})=>{
 
 })
 
-test("verify built in locators in playwright get by label",async({page})=>{
+test("Verify built in locators in playwright get by label",async({page})=>{
     await page.goto('https://playwright.dev/')
     await page.getByLabel('Search (Ctrl+K)').click()
 

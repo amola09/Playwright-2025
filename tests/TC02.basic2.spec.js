@@ -13,7 +13,7 @@ test("TC02-Verify login functionality from demoblaze:", async function({page}) {
     //Actions
     const pageTitle = await page.title()
 
-    console.log(`page title${pageTitle}`)
+    console.log(`page title ${pageTitle}`)
     console.log(await page.title())
 
     await expect(page).toHaveTitle("STORE")
@@ -25,3 +25,5 @@ test("TC02-Verify login functionality from demoblaze:", async function({page}) {
     await expect(page).toHaveURL('https://www.demoblaze.com/')
     
 })
+
+//npx playwright test TC02.basic2.spec.js --headed --project chromium
