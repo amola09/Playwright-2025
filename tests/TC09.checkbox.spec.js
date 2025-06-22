@@ -33,3 +33,6 @@ test('TC09- Verify Checkboxes on testautomationpractice', async({page})=>{
     }
     await page.waitForTimeout(3000)
 })
+
+//
+//npx playwright test TC09.checkbox.spec.js --headed --project chromium

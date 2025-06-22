@@ -37,4 +37,7 @@ test('TC03-Verify Login Functionality',async function ({page}){
 })
 
 
+//npx playwright test TC03.basicLocator.spec.js --headed --project chromium
+
+
 

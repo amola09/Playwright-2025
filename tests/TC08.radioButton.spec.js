@@ -25,3 +25,6 @@ test('TC08- Verify Radio buttons on testautomationpractice',async({page})=>{
 
     
 })
+
+
+//npx playwright test TC08.radioButton.spec.js --headed --project chromium

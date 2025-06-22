@@ -82,3 +82,6 @@ test('TC10: Verify dropdown in playwright on testautomation practice', async ({ 
 
 
 })
+
+
+//npx playwright test TC10.dropdown.spec.js --headed --project chromium

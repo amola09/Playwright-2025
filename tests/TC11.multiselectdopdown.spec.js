@@ -30,3 +30,6 @@ test('TC11: Verify dropdown in playwright on testautomation', async ({ page }) =
     await page.waitForTimeout(5000)
 
 })
+
+
+//npx playwright test TC11.multiselectdopdown.spec.js --headed --project chromium

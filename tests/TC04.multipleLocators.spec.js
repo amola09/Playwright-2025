@@ -25,3 +25,7 @@ test('Verify Multiple Locator in Playwright:',async function ({page}) {
     }
     await page.waitForTimeout(3000)
 })
+
+
+
+//npx playwright test TC04.multipleLocators.spec.js --headed --project chromium

@@ -48,3 +48,6 @@ test("Verify built in locators in playwright get by label",async({page})=>{
     await page.waitForTimeout(3000)
 
 })
+
+
+//npx playwright test TC05.builtInLocators.spec.js --headed --project chromium

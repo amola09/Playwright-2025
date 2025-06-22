@@ -31,3 +31,7 @@ test('TC12. Verify dropdown in playwright', async ({ page }) => {
     await page.waitForTimeout(5000)
 
 })
+
+
+
+//npx playwright test TC12.bootstrapdropdown.spec.js --headed --project chromium

@@ -19,3 +19,4 @@ test('TC01: Verify Title and url of web page:',async function({page}){
 
     await expect(page).toHaveURL("https://www.demoblaze.com/")
 })
+//npx playwright test TC01.basic.spec.js --headed --project chromium  

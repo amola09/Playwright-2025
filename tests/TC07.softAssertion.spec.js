@@ -26,3 +26,6 @@ test('Verify Soft Assertion in playwright', async({page})=>{
     await expect.soft(searchBox).toBeEnabled()
 
 })
+
+
+//npx playwright test TC07.softAssertion.spec.js --headed --project chromium

@@ -60,3 +60,6 @@ test('TC06: Verify Assertions from playwright', async function({page}) {
     
  
 })
+
+
+//npx playwright test TC06.Assertion.spec.js --headed --project chromium
